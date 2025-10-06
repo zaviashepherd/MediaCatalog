@@ -3,6 +3,9 @@ public class Book extends MediaItem {
     protected int year;
     protected int pageCount;
 
+    /*
+    Constructor for book
+     */
     Book(){
         super();
         author = "";

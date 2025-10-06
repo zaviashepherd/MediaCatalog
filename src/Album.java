@@ -3,6 +3,9 @@ public class Album extends MediaItem {
     protected int year;
     protected int trackCount;
 
+    /*
+    constructor for Album
+     */
     Album(){
         super();
         artist = "";
@@ -11,37 +14,56 @@ public class Album extends MediaItem {
     }
 
     //getters and setters for artist year and trackCount
-
+/*
+getter for artist
+ */
     public String getArtist(){
         return artist;
     }
 
+    /*
+    setter for artist
+     */
     public void setArtist(String s){
         if(!s.equals(artist)){
             artist = s;
         }
     }
 
+    /*
+    getter for year
+     */
     public int getYear(){
         return year;
     }
 
+    /*
+    setter for year
+     */
     public void setYear(int s){
         if(s != year){
             year = s;
         }
     }
-
+/*
+getter for TrackCount
+ */
     public int getTrackCount(){
         return trackCount;
     }
 
+    /*
+    setter for TrackCount
+     */
     public void setTrackCount(int s){
         if(s != trackCount){
             trackCount = s;
         }
     }
 
+    /*
+    toString
+     */
     @Override
     public String summary(){
         String s = "";
