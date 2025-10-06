@@ -2,7 +2,7 @@ public class MediaItem {
     protected String id;
     protected String title;
 
-    /*
+    /**
     constructor for MediaItem
      */
     MediaItem(){
@@ -11,14 +11,14 @@ public class MediaItem {
     }
 
     //getters and setters for Id and Title
-/*
+/**
 getter for id
  */
     public String getId(){
         return id;
     }
 
-    /*
+    /**
     setter for id
      */
     public void setId(String n){
@@ -27,14 +27,14 @@ getter for id
         }
     }
 
-    /*
+    /**
     getter for title
      */
     public String getTitle(){
         return title;
     }
 
-    /*
+    /**
     setter for title
      */
     public void setTitle(String s){
@@ -43,7 +43,7 @@ getter for id
         }
     }
 
-    /*
+    /**
     toString method
      */
     public String summary(){

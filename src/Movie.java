@@ -3,7 +3,7 @@ public class Movie extends MediaItem {
     protected int year;
     protected double runtimeMinutes;
 
-    /*
+    /**
     Movie constructor
      */
     Movie(){
@@ -16,14 +16,14 @@ public class Movie extends MediaItem {
 
     //getters and setters for director year and runtime minutes
 
-    /*
+    /**
     getter for director
      */
     public String getDirector(){
         return director;
     }
 
-    /*
+    /**
     setter for director
      */
     public void setDirector(String s){
@@ -32,14 +32,14 @@ public class Movie extends MediaItem {
         }
     }
 
-    /*
+    /**
     getter for year
      */
     public int getYear(){
         return year;
     }
 
-    /*
+    /**
     setter for year
      */
     public void setYear(int s){
@@ -48,14 +48,14 @@ public class Movie extends MediaItem {
         }
     }
 
-    /*
+    /**
     getter for RuntimeMinutes
      */
     public double getRuntimeMinutes(){
         return runtimeMinutes;
     }
 
-    /*
+    /**
    setter for RuntimeMinutes
     */
     public void setRuntimeMinutes(double s){
@@ -64,7 +64,7 @@ public class Movie extends MediaItem {
         }
     }
 
-    /*
+    /**
     toString method
      */
     @Override

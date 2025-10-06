@@ -11,7 +11,7 @@ public class MediaParser {
     static ArrayList<MediaItem> Movies = new ArrayList<MediaItem>();
     static ArrayList<MediaItem> Albums = new ArrayList<MediaItem>();
 
-    /*
+    /**
     method for menu. This is listing all the actions you can take and based of the user input, it will call the certain method.
     There is validator checking to see if the user actually inputs the right one and loops through the menu again to give them
     another chance to put in what they'd like to do. 5 is exit and ends the loops and the program.
@@ -29,21 +29,21 @@ public static void menu(Scanner scanner){
         c = scanner.nextInt();
         scanner.nextLine();
 
-        /*
+        /**
         1 will list all items and calls the method here
          */
         if(c == 1){
             listAllItems();
         }
 
-         /*
+         /**
         2 will add items and calls the method here
          */
         else if(c == 2){
             addItem(scanner);
         }
 
-         /*
+         /**
         3 will save the catalog and calls the method here
          */
         else if(c == 3){
@@ -56,7 +56,7 @@ public static void menu(Scanner scanner){
             }
         }
 
-         /*
+         /**
         4 will export the catalog and calls the method here
          */
         else if(c == 4){
@@ -68,14 +68,14 @@ public static void menu(Scanner scanner){
                 System.out.println("There was an error exporting");
             }
         }
-         /*
+         /**
         will check to see if they input an invalid function and allow them to go through the menu again
         checks to make sure it is not 5 because 5 means exit
          */
         else if(c != 5){
             System.out.println("There was an error please try again.");
         }
-         /*
+         /**
         this is the exit message that shows up before exiting the loop and ending the program
          */
         else{
@@ -85,7 +85,7 @@ public static void menu(Scanner scanner){
     }
 }
 
-    /*
+    /**
            This method has three four loops looping through each array list to print their summary
            in order to list all the items
             */
@@ -102,7 +102,7 @@ public static void menu(Scanner scanner){
         }
     }
 
-    /*
+    /**
        This takes the item you are adding and adds it to the corresponding array list
        based on the input that was received for each media item.
        And then once created it prints the summary of what you just created to confirm what you have created
@@ -192,7 +192,7 @@ public static void menu(Scanner scanner){
         }
     }
 
-    /*
+    /**
         This is the save method. This method loops through each array list and stops based on the size of the array list
          and saves it to csv. This saves as books first then movies then albums.
          */
@@ -212,7 +212,7 @@ public static void menu(Scanner scanner){
     }
 
     //method for exporting catalog
-     /*
+     /**
         This method exports the catalog to a bin file. it uses DataOutputStream to write all the contents of each array list
         as the for loops loop through the array list based on their size.
          */
@@ -232,7 +232,7 @@ public static void menu(Scanner scanner){
     }
 
 
-     /*
+     /**
         This is the generator method. Based on what type you input from adding an item it takes that adds a bk, mv, or al and adds it
         to the corresponding array list. It creates a new number by going into the array list and getting the size and adding a one.
          */
@@ -254,7 +254,7 @@ public static void menu(Scanner scanner){
         return s;
     }
 
-    /*
+    /**
          This is the load in method. This loads in form the csv file from files if there already is one. It takes each value from the
          csv file and splits each file with ",". Based on the first variable that shows what it is it adds it creates a new one
          and adds it to the corresponding array list. variable length 6 was added as an extra validator.

@@ -4,7 +4,8 @@ import java.util.Scanner;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    /*
+
+    /**
     This is the main class, the main class is calling methods from MediaParser to run the program
      */
     public static void main(String[] args) {
